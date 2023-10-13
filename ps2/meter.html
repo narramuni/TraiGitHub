@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <style>
+        /* Style the meter element */
+        meter {
+            width: 400px; /* Set the width of the meter */
+            height: 40px; /* Set the height of the meter */
+            border: 1px solid #ccc; /* Add a border */
+            border-radius: 5px; /* Add rounded corners */
+            background-color: #f0f0f0; /* Set the background color */
+        }
+
+        /* Style the meter's value bar */
+        meter::-webkit-meter-bar {
+            background-color: #ccc;
+        }
+
+        /* Style the meter's value */
+        meter::-webkit-meter-optimum-value {
+            background-color: #00cc00; /* Green color for optimum value */
+        }
+
+        meter::-webkit-meter-suboptimum-value {
+            background-color: #ffcc00; /* Yellow color for suboptimum value */
+        }
+
+        meter::-webkit-meter-even-less-good-value {
+            background-color: #ff0000; /* Red color for values below suboptimum */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter Demo</title>
+</head>
+<body>
+    <fieldset>
+    <h1>Our Fundraisng Goal</h1>
+    <meter value="2500" min="0" max="5000">2500 out of 5000</meter>
+    <h1>Help us reach our goal of $5000!</h1>
+    </fieldset>
+</body>
+</html>
